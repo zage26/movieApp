@@ -26,7 +26,6 @@ app.get("/", (req, res) => {
 app.get("/movieInfo", (req, res) => {
   //Controls output
   const title = req.query.title;
-  // const apikey = "259d74c2";
   //How to pull something out of the command line
   const apiKey = process.env.API_KEY
   console.log(apiKey);
