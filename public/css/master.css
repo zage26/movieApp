@@ -1,0 +1,32 @@
+html {
+  font-family: helvetica;
+  background-color: black;
+  color: white
+}
+
+#container {
+  /* border: solid; */
+  display: grid;
+  margin: 30px;
+  margin-right: 200px;
+  margin-left: 200px;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.poster {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#poster {
+  width: 370px;
+}
+
+.hidden {
+  display: none;
+}
+
+#error {
+  color: red;
+}
