@@ -13,17 +13,26 @@
             <h1>Looking for a Movie?</h1>
             <label for="movie-title">Type movie name here: </label>
             <input type="text" id="movie-title" placeholder="Ex) Shrek">
+            <p id="error"></p>
           </div>
-          <div class="">
-            <h2>Ratings</h2>
+          <div class="dropdown" id="ratings">
+             <div class="dropbtn"><b>Ratings</b></div>
+             <div class="dropctn">
+               <p id="imd" class="rate">Internet Movie Database: </p>
+               <p id="rt" class="rate">Rotten Tomatoes: </p>
+               <p id="mc" class="rate">Metacritic: </p>
+             </div>
           </div>
-          <div class="">
-            <h2>Plot</h2>
+          <div class="dropdown">
+             <div class="dropbtn"><b>Plot</b></div>
+              <div class="dropctn">
+               <p id="plot" class="rate"></p>
+             </div>
           </div>
-          <div class="">
-            <h3>Runtime: </h3>
-            <h3>Rated: </h3>
-            <h3>Released: </h3>
+          <div>
+            <h3 id="runtime">Runtime: </h3>
+            <h3 id="rated">Rated: </h3>
+            <h3 id="released">Released: </h3>
           </div>
       </div>
       <div class="poster">
@@ -37,7 +46,6 @@
     <br>
     <br>
     <!-- <img id="poster" src=""> -->
-    <p id="error"></p>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="./javascripts/app.js"></script>

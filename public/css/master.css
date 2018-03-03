@@ -4,19 +4,17 @@ html {
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-#container {
-  /* border: solid; */
-  display: grid;
-  margin: 30px;
-  margin-right: 200px;
-  margin-left: 200px;
-  grid-template-columns: repeat(2, 50%);
+input {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 13px;
 }
 
-.poster {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#plot {
+  margin-right: 20px;
+}
+
+.rate {
+  color: black;
 }
 
 #poster {
@@ -29,4 +27,46 @@ html {
 
 #error {
   color: red;
+}
+
+#ratings {
+  margin-top: 25px;
+}
+
+.dropctn {
+  margin-left: 10px;
+}
+
+#container {
+  display: grid;
+  margin-top: 60px;
+  margin-right: 300px;
+  margin-left: 300px;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.poster {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  overflow: hidden;
+  height: 53px;
+  transition: height 1s ease-in-out;
+}
+
+.dropbtn {
+	color: black;
+	padding: 10px;
+	font-size: 23px;
+	cursor: pointer;
+}
+
+.show {
+  height: 180px;
 }

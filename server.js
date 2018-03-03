@@ -28,14 +28,23 @@ app.get("/movieInfo", (req, res) => {
   const title = req.query.title;
   //How to pull something out of the command line
   const apiKey = process.env.API_KEY
-  console.log(apiKey);
+  // console.log(apiKey);
   //Pull out current api key
   axios.get(`http://www.omdbapi.com/?apikey=${apiKey}&t=${title}`)
     .then((response) => {
       const poster = response.data.Poster;
-      // console.log(response);
+      // console.log(response.data.Ratings);
+      const runtime = response.data.Runtime;
+      const imd = response.data.Ratings[0].Value;
+      const mc = response.data.Ratings[1].Value;
+      const rt = response.data.Ratings[2].Value;
+      const plot = response.data.Plot;
+      // console.log(plot);
+      const released = response.data.Released;
+      const rated = response.data.Rated;
+      const object = [poster, runtime, released, rated, imd, mc, rt, plot];
       //Object --> normal http requests
-      res.send({poster});
+      res.send({object});
     })
     .catch((error) => {
       res.send({})
