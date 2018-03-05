@@ -11,6 +11,11 @@ const axios = require("axios");
     --> window.location.replace("/movie") *trigger an event*
 (3) update the dom, send to our own route a get request
 */
+
+//HEROKU USES WHATEVER PORT THEY ASSIGN, NOT NECESSARILY YOUR PORT
+//process.env.port --> pulls the port number off heroku
+const port = process.env.PORT || 3000;
+
 const app = express();
 
 app.set("views", path.join(__dirname, "views"));
